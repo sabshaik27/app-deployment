@@ -9,7 +9,7 @@ spec:
   source:
     repoURL: https://github.com/sabshaik27/app-deployment.git
     targetRevision: HEAD
-    path: dev
+    path: crossplane
   destination: 
     server: https://kubernetes.default.svc
     namespace: myapp
