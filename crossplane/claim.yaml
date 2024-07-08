@@ -26,7 +26,7 @@ spec:
 
 
 
-  id: apache
+  id: caddy
 
 
 
@@ -50,10 +50,10 @@ spec:
 
 
 
-    image: httpd:2.4
+    image: caddy
 
 
 
-    host: applicationtest.apache.com
+    host: applicationtest.caddy.com
 
 
