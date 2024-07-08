@@ -1,0 +1,59 @@
+apiVersion: test.com/v1alpha1
+
+
+
+kind: AppClaim
+
+
+
+metadata:
+
+
+
+  name: application-deploy-test
+
+
+
+  labels:
+
+
+
+    app-owner: Saba
+
+
+
+spec:
+
+
+
+  id: apache
+
+
+
+  compositionSelector:
+
+
+
+    matchLabels:
+
+
+
+      type: appdeploy
+
+
+
+  parameters:
+
+
+
+    namespace: automation
+
+
+
+    image: httpd:2.4
+
+
+
+    host: applicationtest.apache.com
+
+
