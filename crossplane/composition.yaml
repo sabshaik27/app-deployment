@@ -84,36 +84,6 @@ spec:
 
                     - containerPort: 80
 
-                    livenessProbe:
-
-                      httpGet:
-
-                        path: /
-
-                        port: 80
-
-                    readinessProbe:
-
-                      httpGet:
-
-                        path: /
-
-                        port: 80
-
-                    resources:
-
-                      limits:
-
-                        cpu: 250m
-
-                        memory: 256Mi
-
-                      requests:
-
-                        cpu: 125m
-
-                        memory: 128Mi
-
     patches:
 
     - fromFieldPath: spec.id
@@ -155,14 +125,6 @@ spec:
     - fromFieldPath: spec.parameters.port
 
       toFieldPath: spec.forProvider.manifest.spec.template.spec.containers[0].ports[0].containerPort
-
-    - fromFieldPath: spec.parameters.port
-
-      toFieldPath: spec.forProvider.manifest.spec.template.spec.containers[0].livenessProbe.httpGet.port
-
-    - fromFieldPath: spec.parameters.port
-
-      toFieldPath: spec.forProvider.manifest.spec.template.spec.containers[0].readinessProbe.httpGet.port
 
     - fromFieldPath: spec.id
 
