@@ -26,7 +26,7 @@ spec:
 
 
 
-  id: apache
+  id: nginx-test
 
 
 
@@ -50,10 +50,10 @@ spec:
 
 
 
-    image: httpd
+    image: nginx
 
 
 
-    host: applicationtest.apache.com
+    host: applicationtest.nginx.com
 
 
