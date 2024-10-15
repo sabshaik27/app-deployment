@@ -8,7 +8,7 @@ jobs:
 
   run_commands:
 
-    runs-on: ubuntu  # Specify the label of your self-hosted runner
+    runs-on: ubuntu-latest
  
     steps:
 
