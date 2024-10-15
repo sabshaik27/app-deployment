@@ -1,0 +1,34 @@
+name: copilot
+
+on:
+
+  workflow_dispatch:
+
+jobs:
+
+  run_commands:
+
+    runs-on: ubuntu  # Specify the label of your self-hosted runner
+ 
+    steps:
+
+    - name: Checkout repository
+
+      uses: actions/checkout@v2
+ 
+    - name: Display Message
+
+      run: |
+
+        echo "Running commands on self-hosted runner..."
+
+    - name: Run Commands
+
+      run: |
+
+        # Add your commands here
+
+        echo "Hello, World!"
+        hostname
+
+    
